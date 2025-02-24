@@ -54,7 +54,80 @@ const CareerOption = () => {
         </div>
       ),
     },
+    {
+      title: "Leveraging Mechanical Engineering & ReactJS Experience",
+      description: "Combine your mechanical engineering background with ReactJS development for a unique career path.",
+      details: (
+        <div>
+          <h3 className="font-bold text-lg">Industrial IoT (Internet of Things):</h3>
+          <p>Develop software for industrial machines, robotics, and IoT systems by combining your mechanical and software engineering skills.</p>
+          <h3 className="font-bold text-lg mt-4">Automated Systems Development:</h3>
+          <p>Build applications and tools that integrate ReactJS with hardware control systems for automation in manufacturing or robotics.</p>
+          <h3 className="font-bold text-lg mt-4">AR/VR in Mechanical Engineering:</h3>
+          <p>Explore augmented reality (AR) and virtual reality (VR) applications in product design, prototyping, and mechanical system simulations.</p>
+          <h3 className="font-bold text-lg mt-4">Tech Product Development:</h3>
+          <p>Use your knowledge in both mechanical engineering and software development to work on tech products that require both hardware and software solutions.</p>
+        </div>
+      ),
+    },
+    {
+      title: "Collaboration with Engineering and Manufacturing Firms",
+      description: "Combine your mechanical engineering expertise and software skills to work with engineering and manufacturing companies.",
+      details: (
+        <div>
+          <h3 className="font-bold text-lg">Smart Manufacturing:</h3>
+          <p>Develop software solutions to improve manufacturing processes with smart technologies, automation, and real-time data analysis.</p>
+          <h3 className="font-bold text-lg mt-4">CAD (Computer-Aided Design) and Simulation Software:</h3>
+          <p>Use your ReactJS skills to develop or enhance CAD and simulation tools, enabling engineers to design and test mechanical systems more efficiently.</p>
+          <h3 className="font-bold text-lg mt-4">Digital Twin Technology:</h3>
+          <p>Work on creating digital twins of physical assets to monitor and simulate systems remotely using your full-stack development and engineering skills.</p>
+        </div>
+      ),
+    },
+    {
+      title: "Robotics and Automation Development",
+      description: "Apply your mechanical and software development knowledge in robotics, creating solutions for automation and robotic systems.",
+      details: (
+        <div>
+          <h3 className="font-bold text-lg">Robotics Programming and Control:</h3>
+          <p>Use ReactJS and other JavaScript technologies to build user interfaces for controlling robotic systems or automating mechanical processes.</p>
+          <h3 className="font-bold text-lg mt-4">Robot Simulation and Visualization:</h3>
+          <p>Develop simulations of robotic systems for testing and training using AR/VR or other visual technologies integrated with mechanical engineering systems.</p>
+          <h3 className="font-bold text-lg mt-4">Autonomous Systems:</h3>
+          <p>Combine ReactJS with hardware development for autonomous systems, including self-driving vehicles, drones, or automated factories.</p>
+        </div>
+      ),
+    },
+    {
+      title: "Cross-Industry Innovation: Mechanical Engineering + Tech",
+      description: "Explore opportunities to apply your mechanical engineering knowledge to other tech industries like aerospace, automotive, and more.",
+      details: (
+        <div>
+          <h3 className="font-bold text-lg">Aerospace Engineering:</h3>
+          <p>Develop software systems that interface with aerospace engineering technologies, including simulations, design tools, and real-time flight data monitoring.</p>
+          <h3 className="font-bold text-lg mt-4">Automotive Industry:</h3>
+          <p>Work on developing tech products or applications related to automotive systems, like electric vehicle management, autonomous driving systems, or advanced diagnostics.</p>
+          <h3 className="font-bold text-lg mt-4">Energy Systems and Smart Grids:</h3>
+          <p>Combine mechanical systems knowledge with software to innovate in the energy sector, such as smart grids, energy management software, or renewable energy technologies.</p>
+        </div>
+      ),
+    },
+    {
+      title: "Data Analytics & Mechanical Systems",
+      description: "Use data analytics to optimize mechanical engineering processes, performance, and systems.",
+      details: (
+        <div>
+          <h3 className="font-bold text-lg">Predictive Maintenance:</h3>
+          <p>Utilize data analytics to predict equipment failures and optimize maintenance schedules for industrial machines and mechanical systems.</p>
+          <h3 className="font-bold text-lg mt-4">Big Data in Manufacturing:</h3>
+          <p>Implement big data solutions to collect and analyze data from manufacturing processes, improving efficiency and reducing waste.</p>
+          <h3 className="font-bold text-lg mt-4">Energy Efficiency Optimization:</h3>
+          <p>Use data-driven methods to optimize energy consumption in mechanical systems or industrial processes, ensuring sustainability and cost savings.</p>
+        </div>
+      ),
+    },
   ];
+  
 
   const openModal = (index) => {
     setSelectedCard(index);
