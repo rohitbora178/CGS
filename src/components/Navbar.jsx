@@ -91,3 +91,108 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+// import React, { useState } from "react";
+// import { FaSearch, FaUserCircle, FaBars } from "react-icons/fa";
+// import logo from '../assets/icon.png'
+// import Carousel from "./Carousel";
+// const Navbar = () => {
+//   // State to track which option is selected
+//   const [activeOption, setActiveOption] = useState("home");
+//   const [drawerOpen, setDrawerOpen] = useState(false);
+
+//   const toggleDrawer = () => {
+//     setDrawerOpen(!drawerOpen);
+//   };
+
+//   const handleOptionClick = (option) => {
+//     setActiveOption(option);
+//   };
+
+//   return (
+
+//   <div>
+//   {/* Navbar */}
+//   <nav className="bg-transparent p-4 fixed top-0 left-0 w-full z-10">
+//     <div className="container mx-auto flex items-center justify-between">
+//       {/* Logo */}
+//       <img src={logo} alt="logo" className="h-16 w-auto" />
+
+//       {/* Desktop Navigation Links */}
+//       <div className="hidden md:flex space-x-24">
+//         <a
+//           href="#home"
+//           onClick={() => handleOptionClick("home")}
+//           className={`${activeOption === "home" ? "text-orange-500" : "text-black"
+//             } hover:text-orange-500`}
+//         >
+//           Home
+//         </a>
+//         <a
+//           href="#product-category"
+//           onClick={() => handleOptionClick("product-category")}
+//           className={`${activeOption === "product-category" ? "text-orange-500" : "text-black"
+//             } hover:text-orange-500`}
+//         >
+//           About
+//         </a>
+//         <a
+//           href="#product"
+//           onClick={() => handleOptionClick("product")}
+//           className={`${activeOption === "product" ? "text-orange-500" : "text-black"
+//             } hover:text-orange-500`}
+//         >
+//           Contact
+//         </a>
+       
+//       </div>
+
+//       <div className="hidden md:flex items-center space-x-8" style={{ visibility: "hidden" }}>
+//         <FaSearch className="text-black text-xl" />
+//         <FaUserCircle className="text-black text-xl" />
+//       </div>
+
+//       <div className="md:hidden flex items-center">
+//         <FaBars className="text-black text-xl" onClick={toggleDrawer} />
+//       </div>
+//     </div>
+
+//     {/* Drawer for Mobile */}
+//     {drawerOpen && (
+//       <div className="md:hidden bg-transparent text-black absolute inset-0 top-16 left-0 flex flex-col items-center p-4 space-y-6">
+//         <a
+//           href="#home"
+//           onClick={() => handleOptionClick("home")}
+//           className={`${activeOption === "home" ? "text-orange-500" : "text-black"
+//             } hover:text-orange-500`}
+//         >
+//           Home
+//         </a>
+//         <a
+//           href="#product-category"
+//           onClick={() => handleOptionClick("product-category")}
+//           className={`${activeOption === "product-category" ? "text-orange-500" : "text-black"
+//             } hover:text-orange-500`}
+//         >
+//           About
+//         </a>
+//         <a
+//           href="#product"
+//           onClick={() => handleOptionClick("product")}
+//           className={`${activeOption === "product" ? "text-orange-500" : "text-black"
+//             } hover:text-orange-500`}
+//         >
+//           Contact
+//         </a>
+       
+//       </div>
+//     )}
+//   </nav>
+
+//   <Carousel />
+// </div>
+//   );
+// };
+
+// export default Navbar;
