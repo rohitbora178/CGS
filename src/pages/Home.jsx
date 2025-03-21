@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
 import '../App.css';
-import landing from '../assets/bg_.jpg';
 
 function Home() {
   const navigate = useNavigate(); // Use the navigate function to navigate between pages
@@ -9,7 +8,7 @@ function Home() {
 
   if (!username) {
     return (
-      <div className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: `url(${landing})` }}>
+      <div className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: `url(${'/bg_.jpg'})` }}>
         <div className="absolute inset-0 bg-black opacity-50"></div> {/* Optional overlay to darken the image */}
 
       <div className="flex flex-col items-center justify-center min-h-screen  text-white">
@@ -39,7 +38,7 @@ function Home() {
   }
 
   return (
-    <div className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: `url(${landing})` }}>
+    <div className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: `url(${'/bg_.jpg'})` }}>
       <div className="absolute inset-0 bg-black opacity-50 z-0"></div> {/* Move overlay behind content */}
 
       <div className="flex flex-col min-h-screen text-white relative z-10"> {/* Add relative z-10 to keep content above overlay */}
