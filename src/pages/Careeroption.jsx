@@ -317,23 +317,24 @@ const CareerOption = () => {
             </div>
           ),
         }
-        
+
       ],
 
     },
 
   ];
 
- useEffect(() => {
-    const studentData = localStorage.getItem('studentData'); 
+  useEffect(() => {
+    const studentData = localStorage.getItem('studentData');
     const parsedStudentData = studentData ? JSON.parse(studentData) : null;
 
     if (parsedStudentData) {
-      const nameFromLocalStorage = parsedStudentData.name; 
+      const nameFromLocalStorage = parsedStudentData.name;
       const filteredData = careerData.filter((career) => career.name === nameFromLocalStorage);
       setCareerDataFiltered(filteredData);
     }
   }, []);
+
 
   const openModal = (index) => {
     setSelectedCard(index);
@@ -345,40 +346,44 @@ const CareerOption = () => {
 
   return (
     <div className="p-8 min-h-screen bg-gradient-to-r from-blue-500 via-teal-500 to-green-500">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {careerDataFiltered.length > 0 &&
-          careerDataFiltered[0].careerOptions.map((career, index) => (
-            <div
-              key={index}
-              className="bg-black text-white rounded-lg shadow-lg p-6 cursor-pointer hover:scale-105 transform transition-all duration-300"
-              onClick={() => openModal(index)}
-            >
-              <h2 className="font-bold text-xl mb-4">{career.title}</h2>
-              <p>{career.description}</p>
-            </div>
-          ))}
-      </div>
-
-      {/* Modal */}
-      {selectedCard !== null && (
-        <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white rounded-lg w-11/12 sm:w-1/2 p-6 shadow-xl relative">
-            <button
-              className="absolute top-2 right-2 bg-red-500 text-white rounded-full p-2"
-              onClick={closeModal}
-            >
-              ×
-            </button>
-            <h2 className="font-bold text-xl mb-4 text-center">
-              {careerDataFiltered[0].careerOptions[selectedCard].title}
-            </h2>
-            <div className="text-gray-700">
-              {careerDataFiltered[0].careerOptions[selectedCard].details}
-            </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {careerDataFiltered.length === 0 ? (
+        <h1 className="text-white">No career options available</h1>
+      ) : (
+        careerDataFiltered[0].careerOptions.map((career, index) => (
+          <div
+            key={index}
+            className="bg-black text-white rounded-lg shadow-lg p-6 cursor-pointer hover:scale-105 transform transition-all duration-300"
+            onClick={() => openModal(index)}
+          >
+            <h2 className="font-bold text-xl mb-4">{career.title}</h2>
+            <p>{career.description}</p>
           </div>
-        </div>
+        ))
       )}
     </div>
+  
+    {/* Modal */}
+    {selectedCard !== null && (
+      <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50">
+        <div className="bg-white rounded-lg w-11/12 sm:w-1/2 p-6 shadow-xl relative">
+          <button
+            className="absolute top-2 right-2 bg-red-500 text-white rounded-full p-2"
+            onClick={closeModal}
+          >
+            ×
+          </button>
+          <h2 className="font-bold text-xl mb-4 text-center">
+            {careerDataFiltered[0].careerOptions[selectedCard].title}
+          </h2>
+          <div className="text-gray-700">
+            {careerDataFiltered[0].careerOptions[selectedCard].details}
+          </div>
+        </div>
+      </div>
+    )}
+  </div>
+  
   );
 };
 
