@@ -217,7 +217,7 @@ const CareerOption = () => {
           careerDataFiltered[0].careerOptions.map((career, index) => (
             <div
               key={index}
-              className="bg-gradient-to-r from-purple-500 via-indigo-500 to-green-500 text-white rounded-lg shadow-lg p-6 cursor-pointer hover:scale-105 transform transition-all duration-300"
+              className="bg-black text-white rounded-lg shadow-lg p-6 cursor-pointer hover:scale-105 transform transition-all duration-300"
               onClick={() => openModal(index)}
             >
               <h2 className="font-bold text-xl mb-4">{career.title}</h2>

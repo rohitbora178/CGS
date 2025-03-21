@@ -110,7 +110,9 @@ function Register() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 via-teal-500 to-green-500">
+    <div className="relative bg-center" style={{ backgroundImage: `url(${'/bg_.jpg'})` }}>
+
+    <div className="min-h-screen flex items-center justify-center">
       <div className="w-full max-w-2xl p-8 bg-white rounded shadow-lg">
         <h1 className="text-2xl font-bold text-center mb-4">Student Information Form</h1>
 
@@ -343,6 +345,7 @@ function Register() {
           </div>
         </form>
       </div>
+    </div>
     </div>
   );
 }

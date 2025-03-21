@@ -35,7 +35,9 @@ const SignUp = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-blue-500 via-teal-500 to-green-500">
+    <div className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: `url(${'/bg_.jpg'})` }}>
+
+    <div className="flex justify-center items-center min-h-screen ">
       <div className="bg-white p-8 rounded-md shadow-md w-80">
         <h2 className="text-2xl font-bold text-center mb-6">Sign Up</h2>
 
@@ -114,6 +116,7 @@ const SignUp = () => {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };

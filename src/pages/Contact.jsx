@@ -16,10 +16,12 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-r from-blue-500 via-teal-500 to-green-500">
+    <div className="relative  bg-center" style={{ backgroundImage: `url(${'/bg_.jpg'})` }}>
+
+    <section className="py-16">
       <div className="max-w-7xl mx-auto px-6">
         {/* Title Section */}
-        <h2 className="text-4xl font-bold text-center text-white mb-8">
+        <h2 className="text-4xl font-bold text-center text-black mb-8">
           Contact Us
         </h2>
 
@@ -83,14 +85,14 @@ const Contact = () => {
 
         {/* Contact Details */}
         <div className="text-center">
-          <h3 className="text-2xl font-semibold text-white mb-4">Other Ways to Reach Us</h3>
-          <p className="text-lg text-gray-200 mb-2">Email: <a href="mailto:info@careerguidance.com" className="text-blue-300">info@careerguidance.com</a></p>
-          <p className="text-lg text-gray-200 mb-2">Phone: <span className="text-blue-300">+1 (555) 123-4567</span></p>
+          <h3 className="text-2xl font-semibold text-black mb-4">Other Ways to Reach Us</h3>
+          <p className="text-lg text-black mb-2">Email: <a href="mailto:info@careerguidance.com" className="text-black">pranjalkothari@gmail.com</a></p>
+          <p className="text-lg text-black mb-2">Phone: <span className="text-black">+91- 9665522166</span></p>
           
           <div className="flex justify-center space-x-6 mt-4">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <svg
-                className="w-6 h-6 text-blue-600 hover:text-blue-700 transition"
+                className="w-6 h-6 text-black hover:text-blue-700 transition"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +102,7 @@ const Contact = () => {
             </a>
             <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
               <svg
-                className="w-6 h-6 text-blue-400 hover:text-blue-500 transition"
+                className="w-6 h-6 text-black hover:text-blue-500 transition"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -112,6 +114,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 
